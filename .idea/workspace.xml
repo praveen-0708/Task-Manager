@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be4b375-7b29-4baf-b15d-ef656893d74f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/functions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/TaskManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/taskStatus.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/praveen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/praveen/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/praveen/task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -33,6 +38,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -76,30 +82,49 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="491" y="83" width="544" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1577099967587">
+    <state x="491" y="83" width="544" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1577168948672">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="491" y="83" width="544" height="626" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1577099967587" />
-    <state width="1320" height="502" key="GridCell.Tab.0.bottom" timestamp="1577160557902">
+    <state x="491" y="83" width="544" height="626" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1577168948672" />
+    <state width="1320" height="501" key="GridCell.Tab.0.bottom" timestamp="1577187018788">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="502" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1577160557902" />
-    <state width="1320" height="502" key="GridCell.Tab.0.center" timestamp="1577160557901">
+    <state width="1320" height="501" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1577187018788" />
+    <state width="1320" height="501" key="GridCell.Tab.0.center" timestamp="1577187018787">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="502" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1577160557901" />
-    <state width="1320" height="502" key="GridCell.Tab.0.left" timestamp="1577160557901">
+    <state width="1320" height="501" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1577187018787" />
+    <state width="1320" height="501" key="GridCell.Tab.0.left" timestamp="1577187018786">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="502" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1577160557901" />
-    <state width="1320" height="502" key="GridCell.Tab.0.right" timestamp="1577160557902">
+    <state width="1320" height="501" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1577187018786" />
+    <state width="1320" height="501" key="GridCell.Tab.0.right" timestamp="1577187018787">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="502" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1577160557902" />
+    <state width="1320" height="501" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1577187018787" />
+    <state x="218" y="27" key="SettingsEditor" timestamp="1577178841401">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="218" y="27" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1577178841401" />
     <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1577160053024">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1577160053024" />
+    <state x="347" y="175" key="run.anything.popup" timestamp="1577171678904">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="347" y="175" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1577171678904" />
   </component>
 </project>

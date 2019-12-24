@@ -2,29 +2,35 @@ package com.praveen;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-enum taskStatus{
-    CREATED,IN_PROGRESS,DONE;
-}
 
-class task{
+class Task {
+    private int id;
     private String name;
     private String description;
     private Date date;
-    private taskStatus status;
+    private TaskStatus status;
 
-
-    public task(String name, String description, Date date, taskStatus status) {
+    public Task(int id, String name, String description, Date date, TaskStatus status) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.date = date;
         this.status = status;
     }
 
-    public taskStatus getStatus() {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public TaskStatus getStatus() {
         return status;
     }
 
-    public void setStatus(taskStatus status) {
+    public void setStatus(TaskStatus status) {
         this.status = status;
     }
 
@@ -55,6 +61,6 @@ class task{
     @Override
     public String toString() {
         SimpleDateFormat sf=new SimpleDateFormat("dd/MM/yyyy");
-        return "Name:"+getName()+"\nDescription:"+getDescription()+"\nDate:"+sf.format(getDate())+"\nStatus:"+getStatus()+"\n";
+        return "ID:"+getId()+"\nName:"+getName()+"\nDescription:"+getDescription()+"\nDate:"+sf.format(getDate())+"\nStatus:"+getStatus()+"\n";
     }
 }
