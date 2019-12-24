@@ -1,7 +1,7 @@
 package com.praveen;
 import java.text.ParseException;
 import java.util.*;
-import java.text.SimpleDateFormat;
+
 
 import static java.lang.System.exit;
 
@@ -11,9 +11,9 @@ public class Main {
         Scanner in=new Scanner(System.in);
         List<task> al=new ArrayList<task>();
 
-        functions c=new functions();
+        TaskManager c=new TaskManager();
         while(true) {
-            System.out.print("------------\nMenu\n1.Add\n2.Display\n3.Delete\n4.Search\n5.Exit\n");
+            System.out.print("------------\nMenu\n1.Add\n2.Display\n3.Delete\n4.Search\n5.List By Status\n6.Exit\n");
             System.out.println("Enter choice:");
             int k=in.nextInt();
             switch (k) {
@@ -35,7 +35,12 @@ public class Main {
                         System.out.println("Not Found");
 
                     break;
-                case 5:exit(0);
+                case 5:
+                    System.out.println("Enter Status:");
+                    taskStatus s=taskStatus.valueOf(in.next());
+                    c.listByStatus(s,al);
+                    break;
+                case 6:exit(0);
                 default:System.out.println("Invalid Input");
             }
         }
@@ -43,47 +48,4 @@ public class Main {
 }
 
 
-class functions{
-    Scanner in=new Scanner(System.in);
 
-    public task input() throws ParseException {
-        System.out.println("Enter task name:");
-        String name=in.nextLine();
-        System.out.println("Enter description:");
-        String description=in.nextLine();
-        System.out.println("Enter date(dd/MM/yyyy):");
-        Date date=new SimpleDateFormat("dd/MM/yyyy").parse(in.nextLine());
-        System.out.println("Enter status(CREATED,IN_PROGRESS,DONE):");
-        taskStatus s=taskStatus.valueOf(in.nextLine());
-        task n=new task(name,description,date,s);
-        return n;
-    }
-
-    public void add(task n,List<task> al){
-        al.add(n);
-    }
-    public void delete(String name,List<task> al){
-        for(task i:al) {
-            if (i.getName().equals(name)) {
-                al.remove(i);
-                break;
-            }
-        }
-    }
-    public void display(List<task> al){
-
-        for(task s:al){
-            System.out.println(s);
-        }
-    }
-    public boolean search(String name,List<task> al){
-
-        for(task s:al) {
-            if (s.getName().equals(name)) {
-                System.out.println(s);
-                return true;
-            }
-        }
-        return false;
-    }
-}
