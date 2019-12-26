@@ -3,7 +3,7 @@ package com.praveen;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-class Task {
+class Task implements Comparable<Task> {
     private int id;
     private String name;
     private String description;
@@ -66,5 +66,15 @@ class Task {
     public String toString() {
         SimpleDateFormat sf=new SimpleDateFormat("dd/MM/yyyy");
         return "ID:"+getId()+"\nName:"+getName()+"\nDescription:"+getDescription()+"\nDate:"+sf.format(getDate())+"\nStatus:"+getStatus()+"\n";
+    }
+
+    @Override
+    public int compareTo(Task task) {
+        if(this.getDate().compareTo(task.getDate())==0)
+            return 0;
+        else if(this.getDate().compareTo(task.getDate())<0)
+            return -1;
+        else
+            return 1;
     }
 }

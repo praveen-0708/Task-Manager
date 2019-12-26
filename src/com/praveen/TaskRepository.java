@@ -11,6 +11,8 @@ public interface TaskRepository {
     List<Task> listByStatus(TaskStatus status);
     int getTotalTasks();
     void updateStatus(TaskStatus status,int taskId);
+    List<Task> getPendingStatus();
+
 }
 
 //

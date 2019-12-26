@@ -8,17 +8,19 @@ public class Main {
 
 
     public static void main(String[] args) throws ParseException {
-        int generateId=1;
+        int generateId;
         Scanner takeInput=new Scanner(System.in);
         TaskManager taskManager=new TaskManager();
         while(true) {
             System.out.print("------------\nMenu\n1.Add\n2.Display\n3.Delete\n4.Search\n" +
-                    "5.List By Status\n6.Display Complete Details\n7.Total Tasks\n8.Update Status\n9.Exit\n");
+                    "5.List By Status\n6.Display Complete Details\n7.Total Tasks\n8.Update Status\n" +
+                    "9.Display Pending Tasks\n10.Exit\n");
             System.out.println("Enter choice:");
             int menuOption=takeInput.nextInt();
             switch (menuOption) {
                 case 1:
-                    Task newTask=input(generateId++);
+                    generateId=100 + new Random().nextInt(900);
+                    Task newTask=input(generateId);
                     taskManager.addTask(newTask);
                     break;
                 case 2:
@@ -66,7 +68,12 @@ public class Main {
                     String newStatus=takeInput.next();
                     taskManager.updateStatus(TaskStatus.valueOf(newStatus),taskId);
                     break;
-                case 9:exit(0);
+                case 9:
+                    System.out.println("Display Pending Tasks");
+                    List<Task> pendingTasks=taskManager.getPendingStatus();
+                    printList(pendingTasks);
+                    break;
+                case 10:exit(0);
                 default:System.out.println("Invalid Input");
             }
         }
@@ -88,10 +95,8 @@ public class Main {
             System.out.println("No Tasks!!");
         }
         else{
-            for(Task i:tasks)
-                System.out.println(i);
+            System.out.println(tasks);
         }
-
     }
 }
 

@@ -26,4 +26,7 @@ class TaskManager{
     public void updateStatus(TaskStatus status,int id){
         repository.updateStatus(status,id);
     }
+    public List<Task> getPendingStatus(){
+        return repository.getPendingStatus();
+    }
 }

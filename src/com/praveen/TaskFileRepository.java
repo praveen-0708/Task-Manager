@@ -4,11 +4,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class TaskFileRepository implements TaskRepository {
-    private static final String TASKS_JSON_FILE = "/home/praveenc/IdeaProjects/Task Manegement/src/com/praveen/tasks.json";
+    private static final String TASKS_JSON_FILE = "/home/praveenc/IdeaProjects/Task Manegement/src/com/praveen/tasks1.json";
 
     private ObjectMapper objectMapper = new ObjectMapper();
 
@@ -33,6 +32,7 @@ public class TaskFileRepository implements TaskRepository {
             try {
                 return objectMapper.readValue(file, TaskList.class);
             } catch (IOException e) {
+
                 throw new IllegalStateException(e);
             }
         } else {
@@ -96,5 +96,17 @@ public class TaskFileRepository implements TaskRepository {
                 writeToFile(tasks);
             }
         }
+    }
+
+    @Override
+    public List<Task> getPendingStatus() {
+        List<Task> pendingTasks=new ArrayList<Task>();
+        for(Task task:tasks){
+            if(task.getStatus().equals(TaskStatus.valueOf("IN_PROGRESS")) || task.getStatus().equals(TaskStatus.valueOf("CREATED")))
+                pendingTasks.add(task);
+        }
+
+        Collections.sort(pendingTasks);
+        return pendingTasks;
     }
 }
