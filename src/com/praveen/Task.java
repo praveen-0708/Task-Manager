@@ -10,6 +10,10 @@ class Task {
     private Date date;
     private TaskStatus status;
 
+    public Task(){
+
+    }
+
     public Task(int id, String name, String description, Date date, TaskStatus status) {
         this.id = id;
         this.name = name;

@@ -3,13 +3,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 class TaskManager{
-    InMemoryTaskRepository repository=new InMemoryTaskRepository();
+    TaskRepository repository=new TaskFileRepository();
 
     public void addTask(Task n){
         repository.addTask(n);
     }
-    public void deleteFromList(int id){
-        repository.deleteFromList(id);
+    public boolean deleteFromList(int id){
+        return repository.deleteFromList(id);
     }
     public List<Task> getList(){
         return repository.getList();

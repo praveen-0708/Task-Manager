@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be4b375-7b29-4baf-b15d-ef656893d74f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/praveenc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task Manegement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Task Manegement.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/InMemoryTaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/InMemoryTaskRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/Task.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/TaskManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/taskStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/TaskRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/praveen/InMemoryTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/InMemoryTaskRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/praveen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/praveen/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/praveen/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/TaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/praveen/task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/praveen/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/TaskRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,6 +42,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jackson-databind-2.10.1.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
@@ -87,41 +95,47 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="491" y="83" width="544" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1577168948672">
+    <state x="491" y="83" width="544" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1577254863757">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="491" y="83" width="544" height="626" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1577168948672" />
-    <state width="1320" height="501" key="GridCell.Tab.0.bottom" timestamp="1577187018788">
+    <state x="491" y="83" width="544" height="626" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1577254863757" />
+    <state x="513" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1577204606170">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="501" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1577187018788" />
-    <state width="1320" height="501" key="GridCell.Tab.0.center" timestamp="1577187018787">
+    <state x="513" y="155" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1577204606170" />
+    <state width="1320" height="369" key="GridCell.Tab.0.bottom" timestamp="1577294970478">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="501" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1577187018787" />
-    <state width="1320" height="501" key="GridCell.Tab.0.left" timestamp="1577187018786">
+    <state width="1320" height="369" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1577294970478" />
+    <state width="1320" height="369" key="GridCell.Tab.0.center" timestamp="1577294970478">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="501" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1577187018786" />
-    <state width="1320" height="501" key="GridCell.Tab.0.right" timestamp="1577187018787">
+    <state width="1320" height="369" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1577294970478" />
+    <state width="1320" height="369" key="GridCell.Tab.0.left" timestamp="1577294970477">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="501" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1577187018787" />
-    <state x="218" y="27" key="SettingsEditor" timestamp="1577178841401">
+    <state width="1320" height="369" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1577294970477" />
+    <state width="1320" height="369" key="GridCell.Tab.0.right" timestamp="1577294970478">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="218" y="27" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1577178841401" />
-    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1577160053024">
+    <state width="1320" height="369" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1577294970478" />
+    <state x="218" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1577332145504">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1577160053024" />
+    <state x="218" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1577332145504" />
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1577332075343">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1577332075343" />
     <state x="347" y="175" key="run.anything.popup" timestamp="1577171678904">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

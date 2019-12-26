@@ -8,13 +8,14 @@ public class InMemoryTaskRepository implements TaskRepository{
     public void addTask(Task n){
         listOfTasks.add(n);
     }
-    public void deleteFromList(int id){
+    public boolean deleteFromList(int id){
         for(Task i: listOfTasks) {
             if (i.getId()==id) {
                 listOfTasks.remove(i);
-                break;
+                return true;
             }
         }
+        return false;
     }
     public List<Task> getList(){
         return listOfTasks;

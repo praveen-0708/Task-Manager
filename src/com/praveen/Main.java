@@ -33,7 +33,10 @@ public class Main {
                 case 3:
                     System.out.println("Enter task ID to delete:");
                     int id=takeInput.nextInt();
-                    taskManager.deleteFromList(id);
+                    if(taskManager.deleteFromList(id))
+                        System.out.println("Task Deleted!!");
+                    else
+                        System.out.println("Task Not Found!!");
                     break;
                 case 4:
                     System.out.println("Enter task ID to search:");
