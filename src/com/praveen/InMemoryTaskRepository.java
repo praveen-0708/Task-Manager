@@ -52,4 +52,9 @@ public class InMemoryTaskRepository implements TaskRepository{
         return null;
     }
 
+    @Override
+    public List<Task> getCurrentDateTask() {
+        return null;
+    }
+
 }

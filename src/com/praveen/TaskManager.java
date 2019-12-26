@@ -29,4 +29,8 @@ class TaskManager{
     public List<Task> getPendingStatus(){
         return repository.getPendingStatus();
     }
+    public List<Task> getCurrentDateTask(){
+        return repository.getCurrentDateTask();
+    }
+
 }

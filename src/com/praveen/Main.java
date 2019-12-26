@@ -14,7 +14,7 @@ public class Main {
         while(true) {
             System.out.print("------------\nMenu\n1.Add\n2.Display\n3.Delete\n4.Search\n" +
                     "5.List By Status\n6.Display Complete Details\n7.Total Tasks\n8.Update Status\n" +
-                    "9.Display Pending Tasks\n10.Exit\n");
+                    "9.Display Pending Tasks\n10.Display Today's Tasks\n11.Exit\n");
             System.out.println("Enter choice:");
             int menuOption=takeInput.nextInt();
             switch (menuOption) {
@@ -73,7 +73,13 @@ public class Main {
                     List<Task> pendingTasks=taskManager.getPendingStatus();
                     printList(pendingTasks);
                     break;
-                case 10:exit(0);
+                case 10:
+                    System.out.println("Display Today's Tasks");
+                    List<Task> currentTasks=taskManager.getCurrentDateTask();
+                    printList(currentTasks);
+
+                    break;
+                case 11:exit(0);
                 default:System.out.println("Invalid Input");
             }
         }
@@ -84,7 +90,7 @@ public class Main {
         String name=takeInput.nextLine();
         System.out.println("Enter description:");
         String description=takeInput.nextLine();
-        System.out.println("Enter date(dd/MM/yyyy):");
+        System.out.println("Enter Due Date(dd/MM/yyyy):");
         Date date=new SimpleDateFormat("dd/MM/yyyy").parse(takeInput.nextLine());
         System.out.println("Enter status(CREATED,IN_PROGRESS,DONE):");
         TaskStatus status=TaskStatus.valueOf(takeInput.nextLine());
@@ -95,7 +101,8 @@ public class Main {
             System.out.println("No Tasks!!");
         }
         else{
-            System.out.println(tasks);
+            for(Task i:tasks)
+            System.out.println(i);
         }
     }
 }

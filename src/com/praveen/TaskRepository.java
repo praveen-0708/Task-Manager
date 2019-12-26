@@ -12,7 +12,7 @@ public interface TaskRepository {
     int getTotalTasks();
     void updateStatus(TaskStatus status,int taskId);
     List<Task> getPendingStatus();
-
+    List<Task> getCurrentDateTask();
 }
 
 //

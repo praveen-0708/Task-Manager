@@ -4,6 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class TaskFileRepository implements TaskRepository {
@@ -108,5 +110,21 @@ public class TaskFileRepository implements TaskRepository {
 
         Collections.sort(pendingTasks);
         return pendingTasks;
+    }
+
+    @Override
+    public List<Task> getCurrentDateTask() {
+        List<Task> currentDateTask=new ArrayList<Task>();
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd/MM/yyyy");
+        String currentDate=simpleDateFormat.format(new Date());
+        for(Task task:tasks){
+            try {
+                if(task.getDate().equals(simpleDateFormat.parse(currentDate)))
+                    currentDateTask.add(task);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
+        return currentDateTask;
     }
 }

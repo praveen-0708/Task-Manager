@@ -1,6 +1,7 @@
 package com.praveen;
 
 import java.text.SimpleDateFormat;
+import java.util.Comparator;
 import java.util.Date;
 
 class Task implements Comparable<Task> {
@@ -65,7 +66,7 @@ class Task implements Comparable<Task> {
     @Override
     public String toString() {
         SimpleDateFormat sf=new SimpleDateFormat("dd/MM/yyyy");
-        return "ID:"+getId()+"\nName:"+getName()+"\nDescription:"+getDescription()+"\nDate:"+sf.format(getDate())+"\nStatus:"+getStatus()+"\n";
+        return "ID:"+getId()+"\nName:"+getName()+"\nDescription:"+getDescription()+"\nDue Date:"+sf.format(getDate())+"\nStatus:"+getStatus()+"\n";
     }
 
     @Override
@@ -77,4 +78,5 @@ class Task implements Comparable<Task> {
         else
             return 1;
     }
+
 }
