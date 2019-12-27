@@ -3,19 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4be4b375-7b29-4baf-b15d-ef656893d74f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/InMemoryTaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/InMemoryTaskRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/TaskFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/TaskFileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task Manegement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Task Manegement.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/TaskManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task Manegement/com/praveen/TaskRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/praveen/InMemoryTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/InMemoryTaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/praveen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/praveen/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/praveen/TaskFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/TaskFileRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/praveen/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/TaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/praveen/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/TaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/praveen/tasks1.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/praveen/tasks1.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +33,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jackson-databind-2.10.1.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mysql-connector-java-8.0.17.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
@@ -105,41 +95,49 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="142" width="544" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1577350531696">
+    <state x="549" y="142" width="544" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1577364458319">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="549" y="142" width="544" height="626" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1577350531696" />
-    <state x="513" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1577204606170">
+    <state x="549" y="142" width="544" height="626" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1577364458319" />
+    <state x="513" y="155" width="424" height="484" key="FileChooserDialogImpl" timestamp="1577360277033">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="513" y="155" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1577204606170" />
-    <state width="1320" height="369" key="GridCell.Tab.0.bottom" timestamp="1577352744133">
+    <state x="513" y="155" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1577360277033" />
+    <state width="1320" height="493" key="GridCell.Tab.0.bottom" timestamp="1577436942137">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="369" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1577352744133" />
-    <state width="1320" height="369" key="GridCell.Tab.0.center" timestamp="1577352744132">
+    <state width="1320" height="493" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1577436942137" />
+    <state width="1320" height="493" key="GridCell.Tab.0.center" timestamp="1577436942137">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="369" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1577352744132" />
-    <state width="1320" height="369" key="GridCell.Tab.0.left" timestamp="1577352744131">
+    <state width="1320" height="493" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1577436942137" />
+    <state width="1320" height="493" key="GridCell.Tab.0.left" timestamp="1577436942137">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="369" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1577352744131" />
-    <state width="1320" height="369" key="GridCell.Tab.0.right" timestamp="1577352744132">
+    <state width="1320" height="493" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1577436942137" />
+    <state width="1320" height="493" key="GridCell.Tab.0.right" timestamp="1577436942137">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="369" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1577352744132" />
-    <state x="218" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1577332145504">
+    <state width="1320" height="493" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1577436942137" />
+    <state x="218" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1577360520912">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="218" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1577332145504" />
-    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1577332075343">
+    <state x="218" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1577360520912" />
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1577418999059">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1577332075343" />
-    <state x="347" y="175" key="run.anything.popup" timestamp="1577171678904">
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1577418999059" />
+    <state x="336" y="27" width="683" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577428661902">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="347" y="175" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1577171678904" />
+    <state x="336" y="27" width="683" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.741@0.27.1366.741" timestamp="1577428661902" />
+    <state x="379" y="27" width="598" height="741" key="refactoring.ChangeSignatureDialog" timestamp="1577423524399">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="379" y="27" width="598" height="741" key="refactoring.ChangeSignatureDialog/0.27.1366.741@0.27.1366.741" timestamp="1577423524399" />
+    <state x="347" y="175" key="run.anything.popup" timestamp="1577431771674">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="347" y="175" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1577431771674" />
   </component>
 </project>
